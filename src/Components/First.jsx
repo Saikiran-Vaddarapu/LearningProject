@@ -1,10 +1,7 @@
 import React, { useState } from "react";
-import Card from "./Card";
-import { data } from "./Data";
 
 export const First = () => {
     const [count,setCount] = useState(0);
-    const Info = data.data;
     const handle = (e) => {
         if(e.target.value == ""){
             setCount(0);
@@ -37,15 +34,6 @@ export const First = () => {
          <button type="reset"> Clear </button>
          <button type="submit"> Submit </button>
       </form>
-      {/* <hr />
-      {
-        Info.map(item => <Card {...item}/>)
-      } */}
-      {/* <Card 
-        avatar = "12"
-        id = "11"
-        email = "vdsk@gmail.com"
-      /> */}
     </>
     );
 }
